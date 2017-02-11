@@ -1,6 +1,6 @@
 (function(){
 'use strict'
-
+ 
 angular.module('MenuApp')
   .controller('ItemListController', ItemListController);
 
@@ -10,4 +10,4 @@ function ItemListController(items) {
 
 	itemList.items = items;
 }
-})();
+})(); 
