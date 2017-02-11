@@ -19,7 +19,6 @@ function MenuDataService($http, ApiBasePath) {
 	service.getItemsForCategory = function(categoryShortName) {
 		return $http.get(ApiBasePath + '/menu_items.json?category=' + categoryShortName)
 		         .then(function(response) {
-		         	console.log(response.data);
 		         	return response.data.menu_items;
 		         });
 	};
