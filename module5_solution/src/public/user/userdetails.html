@@ -1,0 +1,8 @@
+<div class="container">
+    <div>First Name: {{$ctrl.user.firstName}}</div>
+	<div>Last Name: {{$ctrl.user.lastName}}</div>
+	<div>Email: {{$ctrl.user.email}}</div>
+	<div>Phone: {{$ctrl.user.phone}}</div>
+	<div>Favourite Dish: {{$ctrl.user.favDish.name}} - {{$ctrl.user.favDish.description}}</div>
+    <img class="img-responsive" width="250" height="150" ng-src="{{$ctrl.apiPath}}/images/{{$ctrl.user.favDish.short_name}}.jpg" alt="{{$ctrl.user.favDish.name}}">
+ </div>
